@@ -1,5 +1,7 @@
 package com.application.first_boot.student;
 
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -7,7 +9,9 @@ import java.time.LocalDate;
 
 @Entity  //for hibernate
 @Table  //for table in DB
+@NoArgsConstructor //added as per research
 public class Student {
+
 
 
 @Id
@@ -22,7 +26,12 @@ public class Student {
         generator = "student_sequence"
 
 
+
 )
+
+
+
+
 private  Long id;
 private String name;
 private Integer age;
