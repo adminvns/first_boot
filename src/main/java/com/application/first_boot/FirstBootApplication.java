@@ -16,7 +16,7 @@ public class FirstBootApplication {
 	@GetMapping
 	public  String hello(){
 
-		return "hello";
+		return "API  is working!!";
 
 	}
 
